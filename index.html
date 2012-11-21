@@ -2,55 +2,55 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
-    
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+  
+  <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+  <meta name="author" content="Bartek Szopka" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <!--
-        
-        Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
-        presentation to work.
-        
-        This style below contains styles only for demo presentation. Browse it to see how impress.js
-        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
-        you to use them directly in your presentation.
-        
-        Be creative, build your own. We don't really want all impress.js presentations to look the same,
-        do we?
-        
-        When creating your own presentation get rid of this file. Start from scratch, it's fun!
-        
-    -->
-    <link href="css/impress-demo.css" rel="stylesheet" />
-    <!-- <link href="css/tgm.css" rel="stylesheet" />
-    <link href="css/bootstrap.css" rel="stylesheet" />  -->
+  <!--
+      
+    Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
+    presentation to work.
     
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    This style below contains styles only for demo presentation. Browse it to see how impress.js
+    classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+    you to use them directly in your presentation.
+    
+    Be creative, build your own. We don't really want all impress.js presentations to look the same,
+    do we?
+    
+    When creating your own presentation get rid of this file. Start from scratch, it's fun!
+      
+  -->
+  <link href="css/impress-demo.css" rel="stylesheet" />
+  <link href="css/tgm.css" rel="stylesheet" />
+  <link href="css/bootstrap.css" rel="stylesheet" /> 
+  
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <!--
     
-    Body element is used by impress.js to set some useful class names, that will allow you to detect
-    the support and state of the presentation in CSS or other scripts.
-    
-    First very useful class name is `impress-not-supported`. This class means, that browser doesn't
-    support features required by impress.js, so you should apply some fallback styles in your CSS.
-    It's not necessary to add it manually on this element. If the script detects that browser is not
-    good enough it will add this class, but keeping it in HTML means that users without JavaScript
-    will also get fallback styles.
-    
-    When impress.js script detects that browser supports all required features, this class name will
-    be removed.
-    
-    The class name on body element also depends on currently active presentation step. More details about
-    it can be found later, when `hint` element is being described.
+  Body element is used by impress.js to set some useful class names, that will allow you to detect
+  the support and state of the presentation in CSS or other scripts.
+  
+  First very useful class name is `impress-not-supported`. This class means, that browser doesn't
+  support features required by impress.js, so you should apply some fallback styles in your CSS.
+  It's not necessary to add it manually on this element. If the script detects that browser is not
+  good enough it will add this class, but keeping it in HTML means that users without JavaScript
+  will also get fallback styles.
+  
+  When impress.js script detects that browser supports all required features, this class name will
+  be removed.
+  
+  The class name on body element also depends on currently active presentation step. More details about
+  it can be found later, when `hint` element is being described.
     
 -->
 <body class="impress-not-supported">
@@ -65,23 +65,23 @@
 
 <!--
     
-    Now that's the core element used by impress.js.
-    
-    That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
-    It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
-    
-    You probably won't need it now, but there are some configuration options that can be set on this element.
-    
-    To change the duration of the transition between slides use `data-transition-duration="2000"` giving it
-    a number of ms. It defaults to 1000 (1s).
-    
-    You can also control the perspective with `data-perspective="500"` giving it a number of pixels.
-    It defaults to 1000. You can set it to 0 if you don't want any 3D effects.
-    If you are willing to change this value make sure you understand how CSS perspective works:
-    https://developer.mozilla.org/en/CSS/perspective
-    
-    But as I said, you won't need it for now, so don't worry - there are some simple but interesing things
-    right around the corner of this tag ;)
+  Now that's the core element used by impress.js.
+  
+  That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
+  It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
+  
+  You probably won't need it now, but there are some configuration options that can be set on this element.
+  
+  To change the duration of the transition between slides use `data-transition-duration="2000"` giving it
+  a number of ms. It defaults to 1000 (1s).
+  
+  You can also control the perspective with `data-perspective="500"` giving it a number of pixels.
+  It defaults to 1000. You can set it to 0 if you don't want any 3D effects.
+  If you are willing to change this value make sure you understand how CSS perspective works:
+  https://developer.mozilla.org/en/CSS/perspective
+  
+  But as I said, you won't need it for now, so don't worry - there are some simple but interesing things
+  right around the corner of this tag ;)
     
 -->
 <div id="impress">
@@ -103,26 +103,58 @@
     It will not be rotated or scaled.
       
   -->
-  <div id="intro" class="step slide" data-x="-1000px" data-y="-1500px">
+
+
+
+  <div id="intro" class="step slide" data-x="-1000" data-y="-1500">
     <!-- <h1>How Private is Private?: Effects of Degree of Information Sharing on Group Ideation</h1>
     <h2>Presentation for Defense of Master's to Committee</h2>
     <div class="footer"><img class="pull-left" src="img/tgm avatar.jpg"/> <span class="pull-right">Michael Stewart</span></div> -->
+    <!-- <div class="page-header">
+      <h1>How Private is Private?: Effects of Degree of Information Sharing on Group Ideation</h1>
+    </div> -->
+    
 
-    <div class="row">
-      <div class="span4">
-        a
-      </div>
-      <div class="span4">
-        b
-      </div>
-      <div class="span4">
-        c
+    <div class="wrap">
+      <div class="main">
+        <div class="page-header">
+          <h1>How Private is Private?:</h1> <h2>Effects of Degree of Information Sharing on Group Ideation</h2>
+        </div> 
+        <!-- <div class="row">
+          <div class="span4">
+            a just some friggin <a href="#">text in here!</a> just some friggin text in here!just some friggin text in here!just some friggin text in here!just some friggin text in here!just some friggin text in here!
+          </div>
+          <div class="span4">
+            bjust some friggin text in here!just some friggin text in here!just some friggin text in here!just some friggin text in here!just some friggin text in here!just some friggin text in here!
+          </div>
+          <div class="span4">
+            cjust some friggin text in here!just some friggin text in here!just some friggin text in here!just some friggin text in here!just some friggin text in here!just some friggin text in here! just some friggin text in here! just some friggin text in here! just some friggin text in here! just some friggin text in here! just 
+          </div>
+        </div> -->
       </div>
     </div>
+    <footer class="footer" id="end">
+      <div class="pull-left"><img src="img/tgm avatar.jpg" height="170"/></div>
+      <div class="pull-left">
+        <ul>
+          <li>Michael Stewart</li>
+          <li><a href="mailto:tgm@vt.edu">tgm@vt.edu</a></li>
+          <li><a href="http://people.cs.vt.edu/tgm">http://people.cs.vt.edu/tgm</a></li>
+        </ul>
+      </div>
+      <div class="pull-right">
+        <img src="http://hci.cs.vt.edu/assets/img/chci.png"/>
+        <ul>
+          <li>Deborah Tatar</li>
+          <li>Steve Harrison</li>
+          <li>Scott McCrickard</li>
+          <li>Manuel P&eacute;rez-Qui&ntilde;ones</li>
+        </ul>
+      </div>
+    </footer>
 
   </div>
-
-  <footer id="end"></footer>
+  
 
     <!--
         
