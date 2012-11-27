@@ -168,6 +168,18 @@ a:focus {
 .footer li {
   font-size: 14pt;
   line-height: 1.2em;
+  list-style: none;
+  list-style-position: outside;
+  text-indent: 0;
+}
+
+.footer ul {
+  margin: 0;
+  /*margin-left: 10px;*/
+}
+
+.footer address {
+  margin-left: 10px;
 }
 
 /*.footer img {
