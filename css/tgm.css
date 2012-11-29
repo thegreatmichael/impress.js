@@ -152,15 +152,25 @@ a:focus {
   min-height: 100%;
 }
 
+#intro .main {
+  padding-bottom:190px ! important; /* this needs to be bigger than footer height*/
+}
+
 .main {
   overflow:auto;
-  padding-bottom:190px; /* this needs to be bigger than footer height*/
+  padding-bottom:70px; /* this needs to be bigger than footer height*/
+}
+
+#intro .footer {
+  margin-top: -190px ! important; /* negative value of footer height */
+  height: 190px ! important;
+  padding-top:50px !important;
 }
 
 .footer {
+  margin-top: -70px; /* negative value of footer height */
+  height: 70px;
   position: relative;
-  margin-top: -190px; /* negative value of footer height */
-  height: 190px;
   clear:both;
   padding-top:20px;
 } 
@@ -198,27 +208,41 @@ html, body {
   line-height: 1.1em
 }
 
-/*
-.slide q {
-    display: block;
-    font-size: 50px;
-    line-height: 72px;
-
-    margin-top: 100px;
-}*/
-
-/*.slide q strong {
-    white-space: nowrap;
-}*/
-
-.slide .header {
-
+#intro .slide-content p, #intro .slide-content li {
+  font-size: 32px !important;
+  line-height: 36px !important;
+  padding-bottom: 0px !important;
 }
 
-.slide .main {
-  
+.slide-content {
+  padding-top: 15px;
 }
 
-.slide .footer {
-  
+.slide-content p, .slide-content li {
+  font-size: 32px !important;
+  line-height: 36px !important;
+  padding-bottom: 36px;
+}
+
+.slide-content li ul {
+  /*padding-top: 36px;*/
+}
+
+.footer .span8, .footer .title {
+  font-size: 16px !important;
+  text-align: center;
+}
+
+.slide .page-header h1 {
+  font-size: 48px;
+}
+
+.footer .presenter-name {
+  font-size: 16px !important;
+}
+
+.slide-content h1.emph {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 64px;
 }
