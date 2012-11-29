@@ -266,3 +266,7 @@ html, body {
   background: none repeat scroll 0 0 #FFFFFF;
   opacity: 1;
 }
+
+.experiment .footer {
+  margin-top: -90px !important;
+}
