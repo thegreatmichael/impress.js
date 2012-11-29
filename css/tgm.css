@@ -221,7 +221,7 @@ html, body {
 .slide-content p, .slide-content li {
   font-size: 32px !important;
   line-height: 36px !important;
-  padding-bottom: 36px;
+  padding-top: 36px;
 }
 
 .slide-content li ul {
@@ -261,3 +261,8 @@ html, body {
 }
 
 #thesis { width: 800px }
+
+.experiment .slide {
+  background: none repeat scroll 0 0 #FFFFFF;
+  opacity: 1;
+}
